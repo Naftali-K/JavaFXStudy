@@ -1,4 +1,4 @@
-package sample;
+package sample.fullExamples;
 /**
  * Created by Naftali on 2021-06-07
  * 6 section
