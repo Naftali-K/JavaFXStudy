@@ -37,8 +37,9 @@ public class MenuExample extends Application {
             htmlMenuItem.setSelected(true);
         CheckMenuItem cssMenuItem = new CheckMenuItem("CSS");
             cssMenuItem.setSelected(true);
+        CheckMenuItem javaScriptItem = new CheckMenuItem("JavaScript");
 
-        webMenu.getItems().addAll(htmlMenuItem, cssMenuItem);
+        webMenu.getItems().addAll(htmlMenuItem, cssMenuItem, javaScriptItem);
 
         //SQL Menu -------------------------
         Menu sqlMenu = new Menu("SQL");
@@ -47,6 +48,7 @@ public class MenuExample extends Application {
 
         RadioMenuItem mySqlItem = new RadioMenuItem("MySQL");
             mySqlItem.setToggleGroup(toggleGroup);
+            mySqlItem.setSelected(true);
         RadioMenuItem oracleItem = new RadioMenuItem("Oracle");
             oracleItem.setToggleGroup(toggleGroup);
 

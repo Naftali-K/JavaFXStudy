@@ -6,9 +6,7 @@ package sample.fullExamples;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
@@ -27,9 +25,11 @@ public class MenuCustomItemsExample extends Application {
 
         MenuItem newItem = new MenuItem("New");
         MenuItem saveItem = new MenuItem("Save");
+        SeparatorMenuItem separatorMenuItem = new SeparatorMenuItem();
         MenuItem exitItem = new MenuItem("Exit");
+        CustomMenuItem customMenuItem = new CustomMenuItem(new Slider());
 
-        fileMenu.getItems().addAll(newItem, saveItem, exitItem);
+        fileMenu.getItems().addAll(newItem, saveItem, separatorMenuItem, exitItem, customMenuItem);
 
         menuBar.getMenus().addAll(fileMenu);
 
